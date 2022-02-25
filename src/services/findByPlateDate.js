@@ -22,9 +22,7 @@ const findAllCarsServices = async ({ placa, data }) => {
       const date2 = new Date(data_posicao).toDateString();
       return date === date2;
     }
-    if (!placa && !data) {
-      return true;
-    }
+    return true;
   });
 
   const distance = await distancePoiCar(haveDate, cordenatesPois);
