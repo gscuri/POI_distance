@@ -2,9 +2,10 @@
   "name": "poi_distance",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/api/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:test": "mocha ./src/tests/tests.js --exit",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
@@ -12,8 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
     "csv-parser-sync-plus-promise": "^1.1.0",
     "express": "^4.17.3",
-    "geodetic-haversine-distance": "^1.0.1"
+    "geodetic-haversine-distance": "^1.0.1",
+    "mocha": "^9.2.1",
+    "sinon": "^13.0.1"
   }
 }

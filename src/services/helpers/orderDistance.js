@@ -1,5 +1,5 @@
 const poiByPlate = (distance) => {
-  const orderPoiByPlate = distance.reduce((acc, objActual) => {
+  return distance.reduce((acc, objActual) => {
     const poiByPlateObj = acc.find((newObj) => {
       return newObj.nome === objActual.nome && newObj.placa === objActual.placa;
     });
@@ -12,6 +12,5 @@ const poiByPlate = (distance) => {
     poiByPlateObj.data_posicao.push(objActual.data_posicao);
     return acc;
   }, []);
-  return orderPoiByPlate;
 };
 module.exports = { poiByPlate };

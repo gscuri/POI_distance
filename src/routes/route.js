@@ -1,6 +1,6 @@
 const express = require('express');
 const { findAllControllers } = require('../controller/findAll');
-const { findAllCarsControllers } = require('../controller/findAllCar');
+const { findAllCarsControllers } = require('../controller/findByPlateDate');
 
 const router = express.Router();
 

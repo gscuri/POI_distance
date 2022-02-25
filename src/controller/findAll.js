@@ -1,4 +1,4 @@
-const { findAllServices } = require('../services/findAllPoi.js');
+const { findAllServices } = require('../services/findAll.js');
 
 const findAllControllers = async (_req, res, next) => {
   try {

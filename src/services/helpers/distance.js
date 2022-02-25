@@ -1,6 +1,6 @@
 const haversineDistance = require('geodetic-haversine-distance');
 
-const distanceCarPoi = async (cordenatesCar, cordenatesPois) => {
+const distanceCarPoi = (cordenatesCar, cordenatesPois) => {
   let result = [];
   let objAux = {};
   cordenatesCar.forEach(
